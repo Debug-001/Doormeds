@@ -2,20 +2,19 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
+
 // Define a Product component to represent each item in the products page
 const Product = ({ item, addToCart }) => {
   return (
     <>
-      <div className="container">
-      <div className="row">
+      <div className="container pt-4 pt-xl-5">
       <div className="grid-section">
-        <div className="container">
           <div className="row">
             <div className="col-md-3 col-sm-6 grid">
               <div className="product-grid7">
                 <div className="product-image7"><a href="#"><img className="pic-1" src={item.img} /></a></div>
                 <div className="product-content">
-                  <h6 className="title">{item.name}</h6>
+                  <h6 className="title ">{item.name}</h6>
                   <p>{item.price}</p>
                   <button className='btn btn-primary' onClick={() => addToCart(item)}>Add to Cart</button>
                 </div>
@@ -24,8 +23,6 @@ const Product = ({ item, addToCart }) => {
           </div>
         </div>
       </div>
-      </div>
-    </div>
     </>
   );
 };
@@ -44,15 +41,14 @@ const ProductsPage = ({ products, addToCart }) => {
 // Define a CartItem component to represent each item in the cart page
 const CartItem = ({ item, removeFromCart }) => {
   return (
-    <section>
-
+    <div className='container'>
     <div className="cart-item">
-      <h3 className='d-flex text-center'>{item.name}</h3>
+      <h3 className='text-center'>{item.name}</h3>
       <img src={item.img} alt="" />
       <p>Price: ${item.price}</p>
       <button onClick={() => removeFromCart(item)}>Remove</button>
     </div>
-    </section>
+    </div>
   );
 };
 
@@ -60,16 +56,20 @@ const CartItem = ({ item, removeFromCart }) => {
 const CartPage = ({ cartItems, removeFromCart }) => {
   const total = cartItems.reduce((acc, item) => acc + item.price, 0);
   return (
-    <div>
-      <h1>Cart</h1>
+    
+    <div className="container pt-4 pt-xl-5 mt-5">
+      <div className="row">
+        <div className="col-md-8 col-xl-6"></div>
+      </div>
+      <h1 className='fw-bold text-center'>Cart</h1>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <p className="text-center">Your cart is empty.</p>
       ) : (
-        <div>
+        <div className='text-center'>
           {cartItems.map(item => (
             <CartItem key={item.id} item={item} removeFromCart={removeFromCart} />
           ))}
-          <h3>Total: ${total}</h3>
+          <h3 className="fw-bold text-center">Total: ${total}</h3>
         </div>
       )}
     </div>
