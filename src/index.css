@@ -101,3 +101,26 @@ footer {
   -moz-box-shadow: 7px 5px 52px 0px rgba(0, 255, 145, 0.911);
   box-shadow: 7px 5px 52px 0px rgba(0, 255, 145, 0.893);
 }
+
+@media (max-width: 767px) {
+  .product-card {
+    padding: 0.5rem;
+  }
+
+  .product-name {
+    font-size: 1rem;
+  }
+
+  .product-price {
+    font-size: 0.8rem;
+  }
+
+  .product-size {
+    font-size: 0.7rem;
+  }
+
+  .add-to-cart-button {
+    font-size: 0.8rem;
+    padding: 0.3rem;
+  }
+}
