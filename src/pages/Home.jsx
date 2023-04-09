@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Carousel from '../components/Carousel'
+import Carousel2 from '../components/Carousel2'
 
 const Home = () => {
 
@@ -51,9 +52,6 @@ const Home = () => {
       }
     }
   }
-
-
-
 
   return (
     <>
@@ -148,6 +146,7 @@ const Home = () => {
       <div className="grid-section">
         <div className="container">
           <div className="row">
+
             <div className="col-md-3 col-sm-6 grid">
               <div className="product-grid7">
                 <div className="product-image7">
@@ -167,6 +166,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-md-3 col-sm-6">
               <div className="product-grid7">
                 <div className="product-image7">
@@ -186,6 +186,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            
             <div className="col-md-3 col-sm-6">
               <div className="product-grid7">
                 <div className="product-image7">
@@ -381,8 +382,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Carousel />
-
+      <Carousel2 />
       {/* contact section  */}
       <div className="container mt-5">
         <div className="row">

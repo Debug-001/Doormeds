@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAuth0 } from "@auth0/auth0-react";
-
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 
 const Navbar = () => {
@@ -72,6 +72,9 @@ const Navbar = () => {
                 Sign In
               </button>
             )}
+            <button className='btn px-3'>
+                 <AiOutlineShoppingCart  style={{"width":"20px"}}/>
+            </button>
           </div>
         </div>
       </nav>
