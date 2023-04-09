@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-
-// Define a Product component to represent each item in the products page
 const Product = ({ item, addToCart }) => {
   return (
     <>
