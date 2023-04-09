@@ -2,10 +2,11 @@ import React from 'react'
 import { useAuth0 } from "@auth0/auth0-react";
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
-
 const Navbar = () => {
 
   const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
+  // const { cartItems } = this.state;
+  // const cartItemCount = cartItems.length;
 
   return (
     < >
@@ -30,7 +31,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/Products">
+                <a className="nav-link active" href="/products">
                   Products
                 </a>
               </li>
@@ -74,6 +75,7 @@ const Navbar = () => {
             )}
             <button className='btn px-3'>
                  <AiOutlineShoppingCart  style={{"width":"20px"}}/>
+                 {/* ({cartItemCount}) */}
             </button>
           </div>
         </div>
