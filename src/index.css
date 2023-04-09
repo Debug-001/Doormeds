@@ -78,14 +78,14 @@ footer {
   padding-bottom: 5rem;
 }
 
-.btn{
+.btn {
   background: #24aeb1;
   font-size: 14px;
   border: 0;
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
- margin-right: 2rem !important;
+  margin-right: 2rem !important;
 }
 
 .btn main {
@@ -94,6 +94,10 @@ footer {
 .login-text {
   margin-top: 1rem;
   margin-right: 1rem;
-
 }
 
+#contact {
+  -webkit-box-shadow: 7px 5px 52px 0px rgba(0, 255, 145, 0.89);
+  -moz-box-shadow: 7px 5px 52px 0px rgba(0, 255, 145, 0.911);
+  box-shadow: 7px 5px 52px 0px rgba(0, 255, 145, 0.893);
+}

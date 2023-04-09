@@ -79,7 +79,7 @@ const Home = () => {
                     Trelenze
                   </h4>
                   <p>₹ 460.63</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -98,7 +98,7 @@ const Home = () => {
                     Pedigree
                   </h4>
                   <p>₹ 390.50</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@ const Home = () => {
                     Accu-Chek
                   </h4>
                   <p>₹ 1100.23</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -136,7 +136,7 @@ const Home = () => {
                     Durex
                   </h4>
                   <p>₹ 250.00</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -163,7 +163,7 @@ const Home = () => {
                     Minimalistic Acid Face Wash
                   </h6>
                   <p>₹ 284.05</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -182,7 +182,7 @@ const Home = () => {
                     Jiva Aryurveda Honey 1KG
                   </h6>
                   <p>₹ 384.00</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -201,7 +201,7 @@ const Home = () => {
                     Anti - Dandruff Shampoo 150 ml
                   </h6>
                   <p>₹ 175.75</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -220,7 +220,7 @@ const Home = () => {
                     OZiva Glutathione Builder Capsule 60's
                   </h6>
                   <p>₹ 735.08</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -239,7 +239,7 @@ const Home = () => {
                     Sanosan Baby Care Lotion 500 ml
                   </h6>
                   <p>₹ 1128.00</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -258,7 +258,7 @@ const Home = () => {
                     Stocking Knee High Class 2 -(Large) 1's
                   </h6>
                   <p>₹ 1384.00</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -267,7 +267,7 @@ const Home = () => {
                 <div className="product-image7">
                   <a href="#">
                     <img
-                      style={{ "width": "50%", "margin-left": "4.5rem" }}
+                      style={{ "width": "50%", "marginleft": "4.5rem" }}
                       className="pic-1"
                       src="src/assets/img/pr7.jpg"
                     />
@@ -278,7 +278,7 @@ const Home = () => {
                     Omnigel
                   </h6>
                   <p>₹ 350.00</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -297,7 +297,7 @@ const Home = () => {
                     Durex
                   </h6>
                   <p>₹ 90.00</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -316,7 +316,7 @@ const Home = () => {
                     Durex
                   </h6>
                   <p>₹ 90.00</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -335,7 +335,7 @@ const Home = () => {
                     Durex
                   </h6>
                   <p>₹ 90.00</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -354,7 +354,7 @@ const Home = () => {
                     Durex
                   </h6>
                   <p>₹ 90.00</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -373,7 +373,7 @@ const Home = () => {
                     Durex
                   </h6>
                   <p>₹ 90.00</p>
-                  <btn className='btn btn-primary'>Add to Cart</btn>
+                  <button className='btn btn-primary'>Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -384,7 +384,7 @@ const Home = () => {
       <Carousel />
 
       {/* contact section  */}
-      <div className="container">
+      <div className="container mt-5">
         <div className="row">
           <div className="col">
             <div
