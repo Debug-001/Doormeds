@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Carousel from '../components/Carousel'
 import Carousel2 from '../components/Carousel2'
+// import {CartPage} from '../pages/Cart'
 
 const Home = () => {
 
@@ -206,6 +207,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-md-3 col-sm-6">
               <div className="product-grid7">
                 <div className="product-image7">
@@ -225,6 +227,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-md-3 col-sm-6">
               <div className="product-grid7">
                 <div className="product-image7">
@@ -244,6 +247,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-md-3 col-sm-6">
               <div className="product-grid7">
                 <div className="product-image7">
@@ -263,6 +267,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-md-3 col-sm-6">
               <div className="product-grid7">
                 <div className="product-image7">
@@ -283,6 +288,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-md-3 col-sm-6">
               <div className="product-grid7">
                 <div className="product-image7">
@@ -302,6 +308,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-md-3 col-sm-6">
               <div className="product-grid7">
                 <div className="product-image7">
@@ -321,6 +328,28 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
+            <div className="col-md-3 col-sm-6">
+              <div className="product-grid7">
+                <div className="product-image7">
+                  <a href="#">
+                    <img
+                      className="pic-1"
+                      src="src/assets/img/pr6.jpg"
+                    />
+                  </a>
+                </div>
+
+                <div className="product-content">
+                  <h6 className="title">
+                    Durex
+                  </h6>
+                  <p>₹ 90.00</p>
+                  <button className='btn btn-primary'>Add to Cart</button>
+                </div>
+              </div>
+            </div>
+
             <div className="col-md-3 col-sm-6">
               <div className="product-grid7">
                 <div className="product-image7">
@@ -340,6 +369,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-md-3 col-sm-6">
               <div className="product-grid7">
                 <div className="product-image7">
@@ -359,25 +389,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-3 col-sm-6">
-              <div className="product-grid7">
-                <div className="product-image7">
-                  <a href="#">
-                    <img
-                      className="pic-1"
-                      src="src/assets/img/pr6.jpg"
-                    />
-                  </a>
-                </div>
-                <div className="product-content">
-                  <h6 className="title">
-                    Durex
-                  </h6>
-                  <p>₹ 90.00</p>
-                  <button className='btn btn-primary'>Add to Cart</button>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>

@@ -1,23 +1,18 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import React from 'react';
 
-const Cart = () => {
+const Cart = ({ cartItems, removeFromCart }) => {
   return (
-    <>
-      <Navbar />
-      <section>
-        <div className="col-md-8 col-xl-6">
-          <div className="row">
-            <h1 className="text-center">
-              Cart Page UI
-            </h1>
-          </div>
-        </div>
-      </section>
-      <Footer />
-    </>
-  )
-}
+    <div>
+      <ul>
+        {cartItems.map((item) => (
+          <li key={item.id}>
+            {item.name} - ${item.price} - Quantity: {item.quantity}
+            <button onClick={() => removeFromCart(item.id)}>Remove</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
-export default Cart
+export default Cart;

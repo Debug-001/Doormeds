@@ -41,7 +41,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/ambulance">
+                <a className="nav-link active" href="https://ambimed.netlify.app/book">
                   Ambulance
                 </a>
               </li>
@@ -73,10 +73,14 @@ const Navbar = () => {
                 Sign In
               </button>
             )}
-            <button className='btn px-3'>
+            <a href="/cart">
+            <button className='btn px-3'
+             onclick="window.location='home.jsx';"
+            >
                  <AiOutlineShoppingCart  style={{"width":"20px"}}/>
-                 {/* ({cartItemCount}) */}
+                
             </button>
+            </a>
           </div>
         </div>
       </nav>
