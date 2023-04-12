@@ -12,14 +12,14 @@ const Carousel2 = () => {
                     <div className="carousel-item">
                         <img
                             className="w-100 d-block"
-                            src="src/assets/img/cr3.jpg"
+                            src="img/cr3.jpg"
                             alt="Slide Image"
                         />
                     </div>
                     <div className="carousel-item active">
                         <img
                             className="w-100 d-block"
-                            src="src/assets/img/cr4.jpg"
+                            src="img/cr4.jpg"
                             alt="Slide Image"
                         />
                     </div>
@@ -42,19 +42,11 @@ const Carousel2 = () => {
                     >
                         <span
                             className="carousel-control-next-icon"
-                            style={{ background: 'url("/assets/img/cr2.jpg")' }}
                         />
                         <span className="visually-hidden">Next</span>
                     </a>
                 </div>
-                <ol className="carousel-indicators">
-                    <li data-bs-target="#carousel-1" data-bs-slide-to={0} />
-                    <li
-                        data-bs-target="#carousel-1"
-                        data-bs-slide-to={1}
-                        className="active"
-                    />
-                </ol>
+               
             </div>
         </>
     )

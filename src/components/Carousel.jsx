@@ -12,14 +12,14 @@ const Carousel = () => {
                     <div className="carousel-item">
                         <img
                             className="w-100 d-block"
-                            src="src/assets/img/cr1.jpg"
+                            src="img/cr1.jpg"
                             alt="Slide Image"
                         />
                     </div>
                     <div className="carousel-item active">
                         <img
                             className="w-100 d-block"
-                            src="src/assets/img/cr2.jpg"
+                            src="img/cr2.jpg"
                             alt="Slide Image"
                         />
                     </div>
@@ -42,7 +42,6 @@ const Carousel = () => {
                     >
                         <span
                             className="carousel-control-next-icon"
-                            style={{ background: 'url("/assets/img/cr2.jpg")' }}
                         />
                         <span className="visually-hidden">Next</span>
                     </a>

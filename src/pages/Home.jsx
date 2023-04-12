@@ -14,7 +14,7 @@ const Home = () => {
   });
 
   let name, value;
-  
+
   const postUserData = (event) => {
     name = event.target.name;
     value = event.target.value;
@@ -28,7 +28,7 @@ const Home = () => {
 
       const res = fetch(
         'https://civic-abode-341013-default-rtdb.firebaseio.com/contactData.json',
-        
+
         {
           method: "POST",
           Headers: {
@@ -69,7 +69,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/item4.jpg"
+                      src="/img/item4.jpg"
                     />
                   </a>
                 </div>
@@ -88,7 +88,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/item5.jpg"
+                      src="img/item5.jpg"
                     />
                   </a>
                 </div>
@@ -107,7 +107,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/item6.jpg"
+                      src="img/item6.jpg"
                     />
                   </a>
                 </div>
@@ -126,7 +126,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/item8.jpg"
+                      src="img/item8.jpg"
                     />
                   </a>
                 </div>
@@ -154,7 +154,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/pr1.jpg"
+                      src="img/pr1.jpg"
                     />
                   </a>
                 </div>
@@ -174,7 +174,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/pr2.jpg"
+                      src="img/pr2.jpg"
                     />
                   </a>
                 </div>
@@ -187,14 +187,14 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-md-3 col-sm-6">
               <div className="product-grid7">
                 <div className="product-image7">
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/pr3.jpg"
+                      src="img/pr3.jpg"
                     />
                   </a>
                 </div>
@@ -214,7 +214,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/pr4.jpg"
+                      src="img/pr4.jpg"
                     />
                   </a>
                 </div>
@@ -234,7 +234,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/pr5.jpg"
+                      src="img/pr5.jpg"
                     />
                   </a>
                 </div>
@@ -254,7 +254,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/pr6.jpg"
+                      src="img/pr6.jpg"
                     />
                   </a>
                 </div>
@@ -275,7 +275,7 @@ const Home = () => {
                     <img
                       style={{ "width": "50%", "marginleft": "4.5rem" }}
                       className="pic-1"
-                      src="src/assets/img/pr7.jpg"
+                      src="img/pr7.jpg"
                     />
                   </a>
                 </div>
@@ -295,7 +295,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/item8.jpg"
+                      src="img/item8.jpg"
                     />
                   </a>
                 </div>
@@ -315,7 +315,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/item8.jpg"
+                      src="img/item8.jpg"
                     />
                   </a>
                 </div>
@@ -335,7 +335,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/pr6.jpg"
+                      src="img/pr6.jpg"
                     />
                   </a>
                 </div>
@@ -356,7 +356,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/pr6.jpg"
+                      src="img/pr6.jpg"
                     />
                   </a>
                 </div>
@@ -376,7 +376,7 @@ const Home = () => {
                   <a href="#">
                     <img
                       className="pic-1"
-                      src="src/assets/img/pr6.jpg"
+                      src="img/pr6.jpg"
                     />
                   </a>
                 </div>
