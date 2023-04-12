@@ -97,9 +97,9 @@ footer {
 }
 
 #contact {
-  -webkit-box-shadow: 7px 5px 52px 0px rgba(0, 255, 145, 0.89);
-  -moz-box-shadow: 7px 5px 52px 0px rgba(0, 255, 145, 0.911);
-  box-shadow: 7px 5px 52px 0px rgba(0, 255, 145, 0.893);
+  -webkit-box-shadow: 7px 5px 52px 0px #24aeb1;
+  -moz-box-shadow: 7px 5px 52px 0px #24aeb1;
+  box-shadow: 7px 5px 52px 0px #24aeb1;
 }
 
 @media (max-width: 767px) {
