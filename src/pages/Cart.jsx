@@ -23,7 +23,7 @@ const Cart = () => {
           <ul>
             {cartItems.map((item) => (
               <li key={item.id}>
-                {item.name} ({item.quantity}) - ${item.price * item.quantity}
+                {item.name} ({item.img}) ({item.quantity}) - ${item.price * item.quantity}
                 <button onClick={() => handleRemoveClick(item)}>Remove</button>
                 <select value={item.quantity} onChange={(e) => handleQuantityChange(item, e)}>
                   {[...Array(10).keys()].map((i) => (

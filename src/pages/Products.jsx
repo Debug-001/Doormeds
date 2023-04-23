@@ -11,20 +11,31 @@ const Products = () => {
 			id: 1,
 			name: "Minimalistic Oil Free Facewash",
 			img: "/img/pr1.jpg",
-			description: "Get now asap bancho",
 			price: "230rs",
 		},
 		{
 			id: 2,
-			name: "Product 2",
+			name: "Jiva Honey Oil",
 			img: "/img/pr2.jpg",
-			description: "Description 2",
+			price:"102rs"
 		},
 		{
 			id: 3,
 			name: "Product 3",
 			img: "/img/pr3.jpg",
-			description: "Description 3",
+			price:","
+		},
+		{
+			id: 4,
+			name: "Product 3",
+			img: "/img/pr4.jpg",
+			price:","
+		},
+		{
+			id: 5,
+			name: "Product 3",
+			img: "/img/pr5.jpg",
+			price:","
 		},
 	];
 
@@ -34,7 +45,6 @@ const Products = () => {
 				<Navbar />
 				<CartProvider>
 					<section className="products">
-						{/* <h2>Products</h2> */}
 						<div className="product-list">
 							{product.map((product) => (
 								<ProductsPage key={product.id} product={product} />

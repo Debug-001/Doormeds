@@ -11,8 +11,8 @@ const ProductsPage = ({ product }) => {
 
 	return (
 		<div>
-			<h3>{product.name}</h3>
 			<img src={product.img} alt="" />
+			<p>{product.name}</p>
 			<p>{product.price}</p>
 			<button onClick={handleAddToCart}>Add to Cart</button>
 		</div>
