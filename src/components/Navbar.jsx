@@ -73,10 +73,8 @@ const Navbar = () => {
                 Sign In
               </button>
             )}
-            <a href="/cart">
-            <button className='btn px-3'
-             onclick="window.location='home.jsx';"
-            >
+            <a href="">
+            <button className='btn px-3'>
                  <AiOutlineShoppingCart  style={{"width":"20px"}}/>
                 
             </button>

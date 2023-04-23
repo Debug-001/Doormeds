@@ -1,62 +1,44 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { CartContext } from "./CartContext";
 
-const Cart = ({ products }) => {
-  const [cartItems, setCartItems] = useState([]);
+const Cart = () => {
+  const { cartItems, removeFromCart, updateQuantity, totalAmount } = useContext(CartContext);
 
-  const handleAddToCart = (product) => {
-    const itemIndex = cartItems.findIndex((item) => item.id === product.id);
-
-    if (itemIndex !== -1) {
-      const updatedCartItems = [...cartItems]; 
-      updatedCartItems[itemIndex].quantity += 1; 
-      setCartItems(updatedCartItems); 
-    } else {
-      const newCartItem = { ...product, quantity: 1 }; 
-      setCartItems([...cartItems, newCartItem]); 
-    }
+  const handleRemoveClick = (product) => {
+    removeFromCart(product);
   };
 
-  const handleRemoveFromCart = (itemId) => {
-    const updatedCartItems = cartItems.filter((item) => item.id !== itemId);
-    setCartItems(updatedCartItems);
+  const handleQuantityChange = (product, event) => {
+    const quantity = parseInt(event.target.value);
+    updateQuantity(product, quantity);
   };
 
   return (
     <div>
       <h2>Cart</h2>
       {cartItems.length === 0 ? (
-        <p>No items in cart</p>
+        <p>Your cart is empty</p>
       ) : (
-        <ul>
-          {cartItems.map((item) => (
-            <li key={item.id}>
-              {item.name} - Quantity: {item.quantity}
-              <button onClick={() => handleRemoveFromCart(item.id)}>
-                Remove
-              </button>
-            </li>
-          ))}
-        </ul>
+        <div>
+          <ul>
+            {cartItems.map((item) => (
+              <li key={item.id}>
+                {item.name} ({item.quantity}) - ${item.price * item.quantity}
+                <button onClick={() => handleRemoveClick(item)}>Remove</button>
+                <select value={item.quantity} onChange={(e) => handleQuantityChange(item, e)}>
+                  {[...Array(10).keys()].map((i) => (
+                    <option key={i} value={i + 1}>
+                      {i + 1}
+                    </option>
+                  ))}
+                </select>
+              </li>
+            ))}
+          </ul>
+          <p>Total: ${totalAmount}</p>
+          <button>Pay Now</button>
+        </div>
       )}
-      <ProductListing products={products} handleAddToCart={handleAddToCart} />
-    </div>
-  );
-};
-
-const ProductListing = ({ products, handleAddToCart }) => {
-  return (
-    <div>
-      <h2>Products</h2>
-      <ul>
-        {products.map((product) => (
-          <li key={product.id}>
-            {product.name}
-            <button onClick={() => handleAddToCart(product)}>
-              Add to Cart
-            </button>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };
