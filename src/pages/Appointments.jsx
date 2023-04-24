@@ -92,6 +92,8 @@ const Appointments = () => {
                   {/* Start: Success Example */}
 
                   <div className="mb-3">
+                  {isLoaded && (
+
                     <Autocomplete
                       types={["hospital"]}
                       restrictions={{ country: "IN" }}
@@ -107,10 +109,11 @@ const Appointments = () => {
                         type="search"
                         style={{ marginTop: "20px", marginBottom: "20px" }}
                         name="destination"
-                        placeholder="Destination"
+                        placeholder="Search Hospitals...."
                         ref={destinationRef}
                       />
                     </Autocomplete>
+                  )}
                   </div>
 
 
