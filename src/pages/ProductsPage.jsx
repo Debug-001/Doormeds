@@ -14,7 +14,7 @@ const ProductsPage = ({ product }) => {
 			<img src={product.img} alt="" />
 			<p>{product.name}</p>
 			<p>{product.price}</p>
-			<button onClick={handleAddToCart}>Add to Cart</button>
+			<button  className="btn btn-primary" onClick={handleAddToCart}>Add to Cart</button>
 		</div>
 	);
 };

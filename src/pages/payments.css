@@ -1,0 +1,158 @@
+.section-center {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.profile-page-heading h3 {
+  font-size: 40px;
+}
+
+@media screen and (min-width: 800px) {
+  .nav ul {
+    display: flex;
+  }
+
+  .nav li {
+    padding-right: 6rem;
+    font-size: 20px;
+  }
+}
+
+#p,
+#p-1 {
+  font-size: 25px;
+}
+
+#p-1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.button {
+  padding: 0.8rem;
+  background: white;
+  border-color: bisque;
+  text-align: center;
+  width: 400px;
+}
+
+.personal-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-input,
+.email-input,
+.phone-input {
+  padding: 0.6rem;
+}
+
+@media screen and (min-width: 300px) {
+  #last-name {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (min-width: 512px) {
+  .name {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .name-field {
+    margin-top: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .name-input {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .name-input {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  #hr {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #hr {
+    margin-top: 0;
+  }
+}
+
+/* ///////////name end ////////////// */
+
+@media screen and (min-width: 300px) {
+  .phone-input {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 512px) {
+  .phone-number {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .phone-field {
+    margin-top: 1.4rem;
+  }
+
+  .phone-input {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .phone-input {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 912px) {
+  .phone-input {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .email-input {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 512px) {
+  .email {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .email-field {
+    margin-top: 1.4rem;
+  }
+
+  .email-input {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .email-input {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 912px) {
+  .email-input {
+    width: 640px;
+  }
+}

@@ -22,9 +22,9 @@ const Cart = () => {
         <div>
           <ul>
             {cartItems.map((item) => (
-              <li key={item.id}>
-                {item.name} ({item.img}) ({item.quantity}) - ${item.price * item.quantity}
-                <button onClick={() => handleRemoveClick(item)}>Remove</button>
+              <li key={item.id}> ({item.img})
+                {item.name} ({item.quantity}) - ${item.price * item.quantity}
+                <button  className="btn btn-primary" onClick={() => handleRemoveClick(item)}>Remove</button>
                 <select value={item.quantity} onChange={(e) => handleQuantityChange(item, e)}>
                   {[...Array(10).keys()].map((i) => (
                     <option key={i} value={i + 1}>
@@ -36,7 +36,7 @@ const Cart = () => {
             ))}
           </ul>
           <p>Total: ${totalAmount}</p>
-          <button>Pay Now</button>
+          <button className="btn btn-primary" onClick={()=> window.open("/payments", "_blank")}>Pay Now</button>
         </div>
       )}
     </div>

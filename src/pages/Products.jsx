@@ -11,32 +11,33 @@ const Products = () => {
 			id: 1,
 			name: "Minimalistic Oil Free Facewash",
 			img: "/img/pr1.jpg",
-			price: "230rs",
+			price: "Rs. 371.00",
 		},
 		{
 			id: 2,
 			name: "Jiva Honey Oil",
 			img: "/img/pr2.jpg",
-			price:"102rs"
+			price:"Rs. 210.00"
 		},
 		{
 			id: 3,
-			name: "Product 3",
+			name: "Katherine Shampoo",
 			img: "/img/pr3.jpg",
-			price:","
+			price:"Rs. 120.20"
 		},
 		{
 			id: 4,
-			name: "Product 3",
+			name: "Acutone Tablets",
 			img: "/img/pr4.jpg",
-			price:","
+			price:"Rs. 70.89"
 		},
 		{
 			id: 5,
-			name: "Product 3",
+			name: "Sanosan",
 			img: "/img/pr5.jpg",
-			price:","
+			price: "645.25"
 		},
+		
 	];
 
 	return (
