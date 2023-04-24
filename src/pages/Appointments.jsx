@@ -1,9 +1,21 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-
+import {
+  Autocomplete,
+  DirectionsRenderer,
+  GoogleMap,
+  useJsApiLoader,
+} from "@react-google-maps/api";
 
 const Appointments = () => {
+
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: "AIzaSyD7hpDd4P09tXsP4-f8Wwldz22hZJMwqwM",
+    libraries: ["places"],
+  });
+  const [center, setCenter] = useState({});
+  const destinationRef = useRef();
 
   const [userData, setUserData] = useState({
     firstName: "",
@@ -11,7 +23,7 @@ const Appointments = () => {
     date: "",
     time: "",
     email: "",
-    telephone:"",
+    telephone: "",
     message: ""
   });
 
@@ -24,8 +36,8 @@ const Appointments = () => {
 
   const submitData = async (event) => {
     event.preventDefault();
-    const { firstName, lastName, date, time ,email, telephone, message } = userData
-    if (firstName && lastName && date && time && email &&  telephone && message) {
+    const { firstName, lastName, date, time, email, telephone, message } = userData
+    if (firstName && lastName && date && time && email && telephone && message) {
 
       const res = fetch(
         'https://dapon-9bce9-default-rtdb.firebaseio.com/contactForm.json',
@@ -52,7 +64,7 @@ const Appointments = () => {
           date: "",
           time: "",
           email: "",
-          telephone:"",
+          telephone: "",
           message: ""
         })
         alert("Your response has been saved. Expect a reply soon!")
@@ -78,6 +90,30 @@ const Appointments = () => {
               <div>
                 <form className="p-3 p-xl-4" method="POST">
                   {/* Start: Success Example */}
+
+                  <div className="mb-3">
+                    <Autocomplete
+                      types={["hospital"]}
+                      restrictions={{ country: "IN" }}
+                      bounds={{
+                        north: center.lat + 0.1,
+                        south: center.lat - 0.1,
+                        east: center.lng + 0.1,
+                        west: center.lng - 0.1,
+                      }}
+                    >
+                      <input
+                        className="form-control"
+                        type="search"
+                        style={{ marginTop: "20px", marginBottom: "20px" }}
+                        name="destination"
+                        placeholder="Destination"
+                        ref={destinationRef}
+                      />
+                    </Autocomplete>
+                  </div>
+
+
                   <div className="mb-3">
                     <input
                       className="form-control"
@@ -167,11 +203,11 @@ const Appointments = () => {
                 </form>
               </div>
             </div>
-            </div>
-            </div>
-            </section>
+          </div>
+        </div>
+      </section>
 
-     
+
       <Footer />
     </>
   )
