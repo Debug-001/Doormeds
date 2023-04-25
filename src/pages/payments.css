@@ -156,3 +156,23 @@
     width: 640px;
   }
 }
+
+
+.cart-img{
+  line-height: 1rem;
+}
+
+.pt{
+  color: white;
+  margin-top: 3rem !important;
+  margin-bottom: 7rem !important;
+}
+
+.product-list p{
+  color: white;
+  margin-top: 1rem;
+}
+
+#pl-btn{
+  margin-bottom: 5rem !important;
+}

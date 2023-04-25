@@ -13,8 +13,8 @@ const ProductsPage = ({ product }) => {
 		<div>
 			<img src={product.img} alt="" />
 			<p>{product.name}</p>
-			<p>{product.price}</p>
-			<button  className="btn btn-primary" onClick={handleAddToCart}>Add to Cart</button>
+			<p>₹{product.price}</p>
+			<btn id="pl-btn" className="btn btn-primary" onClick={handleAddToCart}>Add to Cart</btn>
 		</div>
 	);
 };

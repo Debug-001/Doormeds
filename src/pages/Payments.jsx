@@ -99,7 +99,9 @@ const Payments = () => {
     </div>
   </div>
   <div className="btn">
-    <button className='btn btn-primary'>pay now</button>
+    <a href="https://api.razorpay.com/v1/checkout/embedded">
+    <button  className='btn btn-primary'>Pay now</button>
+    </a>
   </div>
   {/* end of info */}
 </div>
